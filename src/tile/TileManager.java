@@ -121,7 +121,7 @@ public class TileManager {
     public void draw(Graphics2D g2) {
         for (int row = 0; row < panel.maxWorldRow; row++) {
             for (int col = 0; col < panel.maxWorldCol; col++) {
-                int tileNum = mapTileNum[col][row];
+                int tileNum = mapTileNum[col][row]; //2
                 int x = col * panel.TILE_SIZE;
                 int y = row * panel.TILE_SIZE;
                 int screenX = x - panel.player.worldX + panel.player.screenX;
